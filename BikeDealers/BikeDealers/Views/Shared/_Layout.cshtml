@@ -24,7 +24,7 @@
                             Masters
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Makes</a>
+                            <a class="dropdown-item" asp-controller="Make" asp-action="Index">Makes</a>
                             <a class="dropdown-item" href="#">Models</a>
                         </div>
                     </li>
@@ -52,7 +52,7 @@
         </nav>*@
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="pt-3">
             @RenderBody()
         </main>
     </div>
