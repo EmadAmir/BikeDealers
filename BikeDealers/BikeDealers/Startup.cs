@@ -52,6 +52,9 @@ namespace BikeDealers
 
             app.UseEndpoints(endpoints =>
             {
+                //endpoints.MapControllerRoute("ByYearMonth",
+                //    "make/bikes/{year:int:length(4)}/{month:int:range(1,12)}",
+                //    new {controller="make", action="ByYearMonth" });
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
