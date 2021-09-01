@@ -146,3 +146,4 @@ D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\bin\Debug\net5.0\runtim
 D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Bikes.cshtml.g.cs
 D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Index.cshtml.g.cs
+D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Create.cshtml.g.cs
