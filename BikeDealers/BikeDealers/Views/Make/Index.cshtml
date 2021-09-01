@@ -6,21 +6,21 @@
         ViewData["Title"] = "index";
         Layout = "~/Views/Shared/_Layout.cshtml";
     }
-    <br/><br/>
+    <br/><br/><br/>
 
     <div class="row">
         <div class="col-6">
             <h2 class="text-info">Makes of Vehicle</h2>
         </div>
         <div class="col-6 text-right">
-            <a class="btn btn-info" asp-action="Create">Add New Make</a>
+            <a class="btn btn-info" asp-action="Create"><i class="fas fa-motorcycle"></i> &nbsp; Add New Make</a>
         </div>  
         <br/>
         <div class="col-12">
             <table class="table table-striped border">
                 <tr class="table-info">
                     <th>
-                        @Html.DisplayNameFor(m=>m.Name) @** DisplayNameFor ==> Used to display the name of the property *@
+                        @Html.DisplayNameFor(m=>m.Name) @* DisplayNameFor ==> Used to display the name of the property *@
                     </th>
                     <th></th>
                 </tr>
@@ -30,7 +30,18 @@
                         <td>
                             @Html.DisplayFor(m=>item.Name)
                         </td>
-                        <td class="text-right">Edit | Delete</td>
+                        <td class="text-right ">
+                            <div class="btn-group" role="group">
+                                @*<a type="button" class="btn btn-primary" href="@Url.Action("Edit/"+ item.Id)">Edit</a>
+        <a type="button" class="btn btn-primary" href="@Url.Action("Delete")/@item.Id">Delete</a>       *@
+                                <a type="button" class="btn btn-primary" href="@Url.Action("Edit")/@item.Id"><i class="far fa-edit"></i></a>
+
+                                <form method="post" action="Delete">
+                                    <button onclick="if (!confirm(`Are you sure you want to delete this Make?`)) { return false}" type="submit" class="btn btn-danger rounded-0" asp-action="Delete" asp-route-id="@item.Id" ><i class="far fa-trash-alt"></i></button>
+                                </form>
+                            </div>
+                            
+                        </td>
                     </tr>
                 
                 }

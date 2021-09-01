@@ -42,5 +42,48 @@ namespace BikeDealers.Controllers
             return View(make);
         
         }
+
+        //  get request is generally used when there is a response / redirect action 
+        //asp.net would default a request as get if there is no http attribute mentioned
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var make = _db.Makes.Find(id);
+           
+            if (make==null) 
+            {
+                return NotFound();
+            }
+            _db.Makes.Remove(make);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpPost]
+        public IActionResult Edit(int id)
+        {
+            var make = _db.Makes.Find(id);
+
+            if (make == null)
+            {
+                return NotFound();
+            }
+            
+            return View(make);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Make make)
+        {
+
+            if (ModelState.IsValid)
+            {
+                _db.Update(make);
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(make);
+
+        }
     }
 }

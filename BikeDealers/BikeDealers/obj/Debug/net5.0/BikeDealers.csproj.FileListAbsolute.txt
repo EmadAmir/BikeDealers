@@ -147,3 +147,4 @@ D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\bin\Debug\net5.0\runtim
 D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Bikes.cshtml.g.cs
 D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Index.cshtml.g.cs
 D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Create.cshtml.g.cs
+D:\_PracticeCSharp\cSharpProject\BikeDealers\BikeDealers\obj\Debug\net5.0\Razor\Views\Make\Edit.cshtml.g.cs
